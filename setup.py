@@ -6,7 +6,7 @@ on_rtd = os.environ.get("READTHEDOCS") == "True"
 
 install_requires = [
     "cmake>=3.26",
-    "Cython>=0.29",
+    # "Cython>=0.29",
     "decorator>=5.1",
     "networkx>=3.1",
     "numpy>=1.21",
@@ -17,8 +17,8 @@ install_requires = [
     "tqdm",
 ]
 
-if not on_rtd:
-    install_requires.append("networkit>=10.1")
+# if not on_rtd:
+#     install_requires.append("networkit>=10.1")
 
 setup_requires = ["cython", "numpy", "pytest-runner"]
 
